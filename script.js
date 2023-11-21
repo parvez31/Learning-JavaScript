@@ -79,3 +79,17 @@ const movementsDescriptions = movements.map(
 );
 
 console.log(movementsDescriptions);
+
+//* Filter method
+
+const deposite = movements.filter((mov) => mov > 0);
+console.log(deposite);
+
+// Using For of loop
+
+const depositeFor = [];
+for (const move of movements) {
+  if (move < 0) depositeFor.push(move);
+}
+
+console.log(depositeFor);
